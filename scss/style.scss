@@ -456,6 +456,9 @@ main{
 }
 .black-bg{
   background: rgba(0,0,0,0.13);
+  border-radius: 8px;
+  position: relative;
+  z-index: 10;
 }
 .lang-container{
   padding: 20px 0;
@@ -526,6 +529,9 @@ main{
     text-align: center;
     @include font(500,10px);
     height: 43px;
+    &:focus{
+      box-shadow: 0 0 0 1px rgba(255,255,255,1);
+    }
   }
 }
 .reg-container{
@@ -642,4 +648,51 @@ main{
     margin-top: 14px;
     vertical-align: top;
   }
+}
+.w1120{
+  width: 1100px;
+  margin: 0 auto;
+}
+.table{
+    th{
+      @include font(500,9px);
+      color:#fff;
+      text-align: left;
+      border:0;
+      vertical-align: middle !important;
+      border-bottom:0 !important;
+    }
+    td{
+      background: rgba(82,172,98,0.36);
+      border:1px solid #def1a5;
+      @include font(500,9px);
+      color:#d0e39b;
+      vertical-align: middle !important;
+      padding: 12px 10px !important;
+      text-align: center;
+      &:nth-child(3){
+        min-width: 100px;
+      }
+      &:nth-child(9){
+        min-width: 100px;
+      }
+      &:nth-child(10){
+        min-width: 100px;
+      }
+      &:nth-child(11){
+        min-width: 100px;
+      }
+    }
+}
+.yellow{
+  color:#fffc00 !important;
+}
+.blue{
+  color:#58f9f7 !important;
+}
+.white{
+  color:#fff !important;
+}
+.orange{
+  color:#ff8400 !important;
 }
