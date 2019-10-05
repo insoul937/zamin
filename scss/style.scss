@@ -130,8 +130,9 @@ h4,.h4{
 }
 h5,.h5{
   margin: 0px 0 20px;
-  @include font(700,20px);
-  color:#000;
+  @include font(700,16px);
+  color:#fff;
+  text-transform: uppercase;
 }
 h6,.h6{
   margin: 0px 0 10px;
@@ -375,12 +376,11 @@ ul.list-unstyled{
   border-radius:6px;
   @include font(500,16px);
   color:#000;
-  background: transparent;
+  background: #fff;
   border:2px solid #000;
   line-height: 18px;
-  padding: 6px 10px 5px;
-  min-width: 264px;
-  text-align: left;
+  padding: 12px 20px;
+  text-align: center;
   i{
     float: right;
   }
@@ -695,4 +695,82 @@ main{
 }
 .orange{
   color:#ff8400 !important;
+}
+.pad-container{
+  padding: 0 15px;
+  .form-control{
+    width: 100%;
+  }
+}
+hr{
+  border-color:#1d6857;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.title-with-border{
+  @include font(700,17px);
+  color:#fff;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  &:before{
+    content: '';
+    bottom:0;
+    left: 50%;
+    @extend %left-50;
+    width: 35px;
+    height: 3px;
+    background: #a8d6ad;
+    border-radius: 2px;
+    position: absolute;
+  }
+}
+.row{
+  .btn{
+    width: 100%;
+  }
+}
+.w292{
+  width: 292px !important;
+}
+.no-upper{
+  text-transform: none;
+}
+.list-company{
+  margin-bottom: 40px;
+  a{
+    display: inline-block;
+    margin: 0 15px;
+  }
+}
+.black-container{
+  padding: 30px;
+  background: rgba(0,0,0,0.31);
+  border-radius: 8px;
+  text-align: left;
+  h5,.h5{
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+  label{
+    font-size: 10px;
+  }
+  .form-control{
+    height: 26px;
+    font-size: 10px;
+    text-align: left;
+  }
+}
+.form-group{
+  &.yellow{
+    .form-control{
+      background: rgba(142,164,114,0.17);
+    }
+  }
+}
+.last-cont{
+  .title-with-border{
+    font-size: 13px;
+    margin-bottom: 50px;
+  }
 }

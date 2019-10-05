@@ -1,6 +1,7 @@
 var $ = jQuery;
 
 $(document).ready(function () {
+
     var inputs = document.querySelectorAll('.inputfile');
     Array.prototype.forEach.call(inputs, function (input) {
         var label = input.nextElementSibling,
@@ -33,6 +34,7 @@ $(document).ready(function () {
             checks();
         });
     }
+    $(".price").mask('#.##0,00 Р', {reverse: true});
 
 });
 function checks(){
